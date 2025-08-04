@@ -1,0 +1,52 @@
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Game color variables - matching the purple/lilac theme */
+  --color-border: rgba(168, 85, 247, 0.3);
+  --color-text: #4527a0;
+  --color-text-inverted: #ffffff;
+  --color-empty: rgba(255, 255, 255, 0.9);
+  --color-filled: rgba(168, 85, 247, 0.1);
+  --color-correct: #8b5cf6;
+  --color-present: #f59e0b;
+  --color-absent: rgba(107, 114, 128, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background-color: #C797EB; /* A vibrant lilac for the overscroll */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures body always fills the viewport height */
+  background: linear-gradient(135deg, #C797EB 0%, #F9A8D4 100%) fixed;
+  color: #4527a0; /* A slightly deeper purple for better contrast */
+}
+
+button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
